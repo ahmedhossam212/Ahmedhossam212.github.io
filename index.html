@@ -1,0 +1,398 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ahmed Hossam | Mechatronics Engineer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 8%;
+            background: rgba(11, 17, 32, 0.95);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 100px 10%;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-right: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            background: #38bdf8;
+            color: #0b1120;
+            font-weight: bold;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        .about p {
+            max-width: 850px;
+            color: #cbd5e1;
+            font-size: 17px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card,
+        .project-card {
+            background: #111827;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #1e293b;
+        }
+
+        .skill-card h3,
+        .project-card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p,
+        .project-card p,
+        .project-card li {
+            color: #cbd5e1;
+        }
+
+        .project-card {
+            margin-bottom: 25px;
+        }
+
+        .project-card ul {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .contact p {
+            margin-bottom: 10px;
+            color: #cbd5e1;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #070b14;
+            color: #64748b;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+
+            section {
+                padding: 80px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Ahmed Hossam</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- HOME -->
+    <section class="hero">
+
+        <h1>Hi, I'm <span>Ahmed Hossam</span></h1>
+
+        <h2>Mechatronics Engineering Student</h2>
+
+        <p>
+            Mechatronics Engineering student interested in robotics,
+            ROS 2, embedded systems, autonomous systems, PCB design,
+            and intelligent engineering solutions.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn">View My Projects</a>
+
+            <a href="https://github.com/ahmedhossam212"
+               class="btn secondary"
+               target="_blank">
+                GitHub
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            I am a Mechatronics Engineering student at the Higher
+            Technological Institute, 10th of Ramadan. I am interested
+            in robotics, embedded systems, autonomous robots, and
+            hardware development.
+
+            My current work includes ROS 2, SLAM, EKF-based sensor
+            fusion, odometry, perception, and autonomous robotics
+            through my graduation project.
+
+            I also have experience with Arduino, ESP32, communication
+            protocols, embedded software, and engineering design tools.
+        </p>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <p>Python, C++</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Robotics</h3>
+                <p>ROS 2, SLAM, EKF, Odometry, Perception</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Embedded Systems</h3>
+                <p>Arduino, ESP32, Embedded C</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Communication</h3>
+                <p>UART, SPI, I2C, CAN, LIN</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <p>Git, GitHub, VS Code, SolidWorks, Proteus</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+
+        <div class="project-card">
+
+            <h3>🚗 Rover — Graduation Project</h3>
+
+            <p>
+                Autonomous robotics project involving ROS 2,
+                localization, perception, and navigation.
+            </p>
+
+            <ul>
+                <li>Developed ROS 2 nodes and integrated robot components.</li>
+                <li>Worked with publishers, subscribers, topics, and launch files.</li>
+                <li>Implemented wheel odometry and EKF-based sensor fusion.</li>
+                <li>Worked on SLAM for localization and mapping.</li>
+                <li>Contributed to the perception system.</li>
+                <li>Integrated localization, odometry, perception, and navigation.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>🏠 Smart Garage System</h3>
+
+            <p>
+                Arduino-based smart garage system designed to monitor
+                vehicles and automate garage functions.
+            </p>
+
+            <ul>
+                <li>Emergency alert system with buzzer notifications.</li>
+                <li>LCD display for real-time garage information.</li>
+                <li>Automatic lighting using an LDR sensor.</li>
+                <li>Vehicle counter for monitoring car entries and exits.</li>
+                <li>Integrated IR sensors, servo motor, LCD, buzzer, and LDR.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>⚡ Power Supply</h3>
+
+            <p>
+                Designed and assembled a regulated power supply circuit.
+            </p>
+
+            <ul>
+                <li>Transformer and bridge rectifier design.</li>
+                <li>Filter capacitor and voltage regulator.</li>
+                <li>Voltage and current calculations.</li>
+                <li>PCB soldering and assembly.</li>
+                <li>Load testing and troubleshooting.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">Contact</h2>
+
+        <p>
+            Email:
+            <a href="mailto:ahmedhossamm002@gmail.com">
+                ahmedhossamm002@gmail.com
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/ahmed-hussam-eldin"
+               target="_blank">
+                LinkedIn Profile
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/ahmedhossam212"
+               target="_blank">
+                github.com/ahmedhossam212
+            </a>
+        </p>
+
+    </section>
+
+
+    <footer>
+        ©️ 2026 Ahmed Hossam. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
+```
